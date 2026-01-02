@@ -1,0 +1,90 @@
+h1 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.jumbotron {
+  
+  padding-top: 5rem;
+  background-color: #a5ebb1;
+}
+
+.jumbotron img {
+  margin-left: 180px;
+  display: flex;
+  justify-content: left;
+}
+
+.jumbotron h1 {
+  margin-top: -250px;
+  display: flex;
+  justify-content: right;
+	animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+}
+
+.jumbotron h6 {
+   display: flex;
+   justify-content: right;
+   animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+}
+
+#projects {
+  background-color: #a5ebb1;
+}
+
+section {
+ padding-top: 4rem;   
+}
+
+.gallery-img {
+  width: 80%;
+}
+
+@media screen and (max-width: 576px){
+ 
+  .jumbotron img{
+    width: 200px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 250px;
+    justify-content: center;
+    
+  }
+
+  .jumbotron h1 {
+    margin-left: 200px;
+    justify-self: center ;
+
+  }
+
+  .jumbotron h6 {
+    margin-right: 200px ;
+    justify-self: center;
+    animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+  
+  }
+
+}
+
+/* KEYFRAME */
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
