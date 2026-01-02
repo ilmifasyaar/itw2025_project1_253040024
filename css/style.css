@@ -1,3 +1,27 @@
+nav ul li a {
+  position: relative;
+  transition: 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: whitesmoke;
+  transition: width 0.8s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
 h1 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -6,15 +30,14 @@ h1 {
 }
 
 .jumbotron {
-  
   padding-top: 5rem;
-  background-color: #a5ebb1;
 }
 
 .jumbotron img {
   margin-left: 180px;
   display: flex;
   justify-content: left;
+  box-shadow: 0 5px 20px 10px #198754;
 }
 
 .jumbotron h1 {
@@ -30,8 +53,29 @@ h1 {
    animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }
 
-#projects {
+#about {
   background-color: #a5ebb1;
+}
+
+#projects {
+  margin-top: -2px;
+  background-color: #a5ebb1;
+}
+
+.card {
+  box-shadow: 0 15px 20px 15px #198754;
+}
+
+.card-1 {
+  height: 200px;
+  margin-top: 20px;
+  padding-top: 30px;
+  box-shadow: 0 10px 15px 3px #000000;
+  transition: transform 0.3s;
+}
+
+.card-1:hover {
+  transform:scale(1.2)
 }
 
 section {
@@ -42,13 +86,17 @@ section {
   width: 80%;
 }
 
+footer {
+  height: 120px;
+}
+
 @media screen and (max-width: 576px){
  
   .jumbotron img{
     width: 200px;
     margin: auto;
     margin-top: -50px;
-    margin-bottom: 250px;
+    margin-bottom: 300px;
     justify-content: center;
     
   }
@@ -64,6 +112,33 @@ section {
     justify-self: center;
     animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
   
+  }
+  nav ul li a {
+    position: relative;
+    transition: 0.5s ease;
+  }
+
+  nav ul li a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: whitesmoke;
+    transition: width 0.8s ease;
+  }
+
+  nav a:hover::after {
+    width: 80%;
+  }
+
+  nav a:hover::after {
+  width: 10%;
   }
 
 }
@@ -87,4 +162,5 @@ section {
     transform: translateX(100px);
   }
 }
+
 
