@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 nav ul li a {
   position: relative;
   transition: 0.5s ease;
@@ -65,7 +69,7 @@ h1 {
 .card {
   box-shadow: 0 15px 20px 15px #198754;
   transition: transform 0.3s;
-  position: relative;
+  
 }
 
 .card:hover{
@@ -88,12 +92,69 @@ section {
  padding-top: 4rem;   
 }
 
-.gallery-img {
-  width: 80%;
+.carousel-item img {
+  background-size: 100px;
+  width: 10px;
 }
 
 footer {
   height: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron img{ 
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 300px;
+    justify-content: center;
+    
+  }
+
+  .jumbotron h1 {
+    margin-left: 200px;
+    justify-self: center ;
+
+  }
+
+  .jumbotron h6 {
+    margin-right: 200px ;
+    justify-self: center;
+    animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+  
+  }
+  nav ul li a {
+    position: relative;
+    transition: 0.5s ease;
+  }
+
+  nav ul li a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: whitesmoke;
+    transition: width 0.8s ease;
+  }
+
+  nav a:hover::after {
+    width: 80%;
+  }
+
+  nav a:hover::after {
+  width: 10%;
+  }
+  #about {
+    margin-top: -5px;
+  }
+  #skills .card-1 h2 {
+    font-size: large;
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -168,4 +229,3 @@ footer {
     transform: translateX(100px);
   }
 }
-
