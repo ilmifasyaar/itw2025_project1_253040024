@@ -75,15 +75,15 @@
             <h2>About Me</h2>
           </div>
         </div>
-        <div class="col justify-content-sm-center fs-5 text-center  bg-success p-2 text-white rounded-5" data-aos="zoom-in-up" data-aos-duration="1500">
-          <div class="p-2" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col justify-content-sm-center fs-5 text-center  bg-success p-2 text-white rounded-5" data-aos="zoom-in-up" data-aos-duration="1300">
+          <div class="p-2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1300">
             <p>
               Nama saya Muhammad Ilmi Fasya Ar Rafi. Saya lahir di Bandung pada 20 November 2006. Saat berusia sekitar tiga sampai empat bulan, saya pindah ke Kota Malang. Saya tinggal di sana hingga usia tiga tahun. Setelah itu, saya
               berpindah ke Pulau Bali dan menetap sampai usia lima tahun. Menjelang usia enam tahun, saya kembali ke Bandung. Sejak saat itu hingga sekarang, Bandung menjadi tempat saya tumbuh, belajar, dan membentuk arah hidup. Perpindahan
               kota sejak kecil membiasakan saya beradaptasi. Saya cepat menyesuaikan diri dengan lingkungan baru. Saya terbiasa melihat perbedaan sebagai hal wajar. Pengalaman ini membentuk cara saya berpikir terbuka dan fleksibel.
             </p>
           </div>
-          <div class="p-2" data-aos="fade-up" data-aos-duration="3000">
+          <div class="p-2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1300">
             <p>
               Saya menempuh pendidikan dasar di SDN 127 Sekeloa. Di sekolah ini saya membangun kebiasaan belajar dan disiplin sejak dini. Saya melanjutkan ke SMPS Pasundan 3 Bandung. Di jenjang ini saya mulai aktif berdiskusi dan berani
               menyampaikan pendapat. Pendidikan menengah atas saya jalani di SMAS Pasundan 2 Bandung. Di sini saya semakin terbiasa berpikir kritis dan terstruktur. Saya belajar menyusun argumen dengan jelas. Modal penting untuk dunia
@@ -154,17 +154,18 @@
         <div class="row">
           <div class="col-sm-4 mb-4">
             <div class="card" data-aos="flip-right" data-aos-duration="1800">
-              <img src="./img/Sfondo Como 1907.jfif" class="card-img-top" alt="projects 1" />
+              <img src="./img/Sfondo Como 1907.jfif" class="card-img-top" alt="projects 1"/>
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <p class="card-text">Artikel tentang Club COMO 1907</p>
               </div>
             </div>
           </div>
           <div class="col-sm-4 mb-4 align-self-end">
             <div class="card" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="50">
-              <img src="./img/fredrick-tendong-6ou8gWpS9ns-unsplash.jpg" class="card-img-top" alt="projects 2" />
+              <img src="./img/maxresdefault.jpg" class="card-img-top" alt="projects 2" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <p class="card-text">Website Community</p>
+                <a href="https://ilmifasyaar.github.io/itw2025_project2_253040024/" class="stretched-link"></a>
               </div>
             </div>
           </div>
@@ -172,7 +173,7 @@
             <div class="card" data-aos="flip-left" data-aos-duration="1800">
               <img src="./img/hans-eiskonen-wTKU2Zbp8Jo-unsplash.bmp" class="card-img-top" alt="projects 3" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <p class="card-text">Gallery Favorite Band's</p>
               </div>
             </div>
           </div>
@@ -264,27 +265,14 @@
       <p>Created by <a href="https://www.instagram.com/ilmifasyaar/" class="text-white fw-bold">@ilmifasyaar</a></p>
     </footer>
     <!-- Akhir Footer -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script>
-      const galleryImage = document.querySelectorAll('.gallery-img');
-      galleryImage.forEach((img, i) => {
-        img.dataset.aos = 'fade-down';
-        img.dataset.aosDelay = i * 100;
-        img.dataset.aosDuration = 1000;
-      });
-
-      AOS.init({
-        once: true,
-      });
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 
-    <script>
-      gsap.from('.jumbotron img', { duration: 1.5, rotateY: 250, opacity: 0 });
-      gsap.from('.navbar', { duration: 2, y: '-100%', opacity: 0, ease: 'bounce({strength:0.7, endAtStart:true})' });
-    </script>
+    <script src="./js/script.js"></script>
+
   </body>
 </html>

@@ -37,7 +37,7 @@ h1 {
   margin-left: 180px;
   display: flex;
   justify-content: left;
-  box-shadow: 0 5px 20px 10px #198754;
+  box-shadow: 0 0 30px 12px #198754;
 }
 
 .jumbotron h1 {
@@ -64,6 +64,12 @@ h1 {
 
 .card {
   box-shadow: 0 15px 20px 15px #198754;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.card:hover{
+  transform: scale(1.05);
 }
 
 .card-1 {
@@ -162,5 +168,4 @@ footer {
     transform: translateX(100px);
   }
 }
-
 
