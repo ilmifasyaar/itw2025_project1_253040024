@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -61,10 +66,19 @@ h1 {
   background-color: #a5ebb1;
 }
 
+#about .col-a {
+  box-shadow: 0 0 40px 6px #ffffff;
+
+}
+
 #projects {
   margin-top: -2px;
   background-color: #a5ebb1;
 }
+
+#projects .card .card-body_ p {
+  padding: 15px;  
+} 
 
 .card {
   box-shadow: 0 15px 20px 15px #198754;
@@ -73,7 +87,7 @@ h1 {
 }
 
 .card:hover{
-  transform: scale(1.05);
+  transform: scale(1.25);
 }
 
 .card-1 {
@@ -87,18 +101,22 @@ h1 {
 .card-1:hover {
   transform:scale(1.2)
 }
+ 
+#gallery .carousel-inner img {
+  width: 100vh;
+  margin: auto;
+}
 
 section {
  padding-top: 4rem;   
 }
 
-.carousel-item img {
-  background-size: 100px;
-  width: 10px;
-}
-
 footer {
   height: 120px;
+}
+
+footer a {
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
@@ -152,9 +170,19 @@ footer {
   #about {
     margin-top: -5px;
   }
+  #projects .card .card-body_ p {
+    padding: 25px;
+  } 
+
   #skills .card-1 h2 {
     font-size: large;
   }
+
+  #gallery .carousel-inner img {
+  width: 450px;
+  margin: auto;
+  }
+
 }
 
 @media screen and (max-width: 576px){
@@ -206,6 +234,11 @@ footer {
 
   nav a:hover::after {
   width: 10%;
+  }
+
+  #gallery .carousel-inner img {
+  width: 200px;
+  margin: auto;
   }
 
 }
