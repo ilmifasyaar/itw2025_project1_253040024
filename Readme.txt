@@ -14,3 +14,6 @@ https://www.vecteezy.com/png/23654784-golden-logo-template
 library external:
 GSAP -https://gsap.com/docs/v3/
 DATA AOS -https://michalsnik.github.io/aos/
+
+waves page:
+https://getwaves.io/
